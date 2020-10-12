@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dart - page</title>
+  <title>Nombre Empresa </title>
   <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
   <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
   
@@ -40,8 +40,13 @@
         </nav>
         <div class="header__content text-center">
           <h1 class="header__content__title">PRE EVALUACIÓN GRATUITA</h1>
-          <p class="header__content__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          <a class="button button--margin-right button--hover" href="#">Solicitar</a>
+          <p class="header__content__paragraph"></p>
+          <button  class="button button--margin-right button--hover" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Solicitar
+          </button>
+
+          
+          
         </div>
       </div>
     </header>
@@ -63,7 +68,10 @@
               <div class="col-md-6 about__extra-padding">
                 <h3 class="about__content-title">Nuestra Misión</h3>
                 <p class="about__content-paragraph"> Brindar ayuda para hacer realidad el sueño de la casa propia, buscando el financiamiento necesario para concretar la compra de tu Futura Vivienda. </p>
-                  <a class="button--light" href="#">READ MORE</a>
+
+                <h3 class="about__content-title">Nuestra Vision</h3>
+                <p class="about__content-paragraph"> Brindar ayuda para hacer realidad el sueño de la casa propia, buscando el financiamiento necesario para concretar la compra de tu Futura Vivienda. </p>
+             
                 </div>
               </div>
             </div>
@@ -73,21 +81,21 @@
 
 
 
-    <section class="contact contact--bg">
+    <section class="contact contact--bg" id="leasingHabitacional">
       <div class="container">
         <div class="page-section text-left">
           <h2 class="page-section__title--white">Leasing Habitacional</h2>
-          <p class="page-section__paragraph--white">If you like our works and have a project,contact us now</p>
+          <p class="page-section__paragraph--white">Financia tu primera Futura Vivienda, a través de un contrato con promesa de compraventa, pagando una cuota mensual fija durante todo el plazo.  Al terminar de pagar la última cuota del plazo acordado, eres el propietario.</p>
           <a class="button button--hover" href="#">Contactanos</a>
         </div>
       </div>
     </section>
 
-    <section class="contact contact--bg">
+    <section class="contact contact--bg" id="mutuoHipotecario">
       <div class="container">
         <div class="page-section text-right">
           <h2 class="page-section__title--white">Mutuo Hipotecario Endolsable</h2>
-          <p class="page-section__paragraph--white">If you like our works and have a project,contact us now</p>
+          <p class="page-section__paragraph--white">Puedes acceder a financiar tu primera vivienda, la propiedad queda a tu nombre desde el primer momento.</p>
           <a class="button button--hover" href="#">Contactanos</a>
         </div>
       </div>
@@ -101,8 +109,9 @@
       <div class="container">
         <div class="page-section">
           <div class="text-center">
+          <br>
             <h2 class="page-section__title">TIPOS DE VIVIENDA</h2>
-            <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p class="page-section__paragraph"></p>
           </div>
           <div class="row gutters-50">
                 <div class="col-md-6">
@@ -111,7 +120,7 @@
                         <img class="img-responsive" src="assets/images/featured-project-pic1.png" alt="">
                             <div class="caption">
                                 <h4 class="project__title">VIVIENDA NUEVA</h4>
-                                <p class="project__paragraph">Lorem ipsum dolor sit amet </p>
+                                <p class="project__paragraph">Te ayudamos a financiar la compra de una casa nueva. En el sector que mas te guste.</p>
                             </div>
                         </a>
                     </div>
@@ -122,7 +131,7 @@
                         <img class="img-responsive" src="assets/images/featured-project-pic1.png" alt="">
                             <div class="caption">
                                 <h4 class="project__title">VIVIENDA USADA</h4>
-                                <p class="project__paragraph">Lorem ipsum dolor sit amet </p>
+                                <p class="project__paragraph">Si te interesa adquirir la vivienda que estas arrendando u otra usada, tenemos la solución para tí. </p>
                             </div>
                         </a>
                     </div>
@@ -681,4 +690,23 @@
 </body>
 </html>
 
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">PRE EVALUACION</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="panel__button" >Enviar </button>
+      </div>
+    </div>
+  </div>
+</div>
